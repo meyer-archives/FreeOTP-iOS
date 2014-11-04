@@ -22,7 +22,6 @@
 		F17A860B17EC12670098E7F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F17A860917EC12670098E7F3 /* InfoPlist.strings */; };
 		F17A860D17EC12670098E7F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A860C17EC12670098E7F3 /* main.m */; };
 		F17A861117EC12670098E7F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A861017EC12670098E7F3 /* AppDelegate.m */; };
-		F17A861C17EC12670098E7F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17A861B17EC12670098E7F3 /* Images.xcassets */; };
 		F17A862317EC12670098E7F3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17A862217EC12670098E7F3 /* XCTest.framework */; };
 		F17A862417EC12670098E7F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17A860017EC12670098E7F3 /* Foundation.framework */; };
 		F17A862517EC12670098E7F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17A860417EC12670098E7F3 /* UIKit.framework */; };
@@ -30,12 +29,15 @@
 		F18E16F218F2603800722FE7 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = F18E16F118F2603800722FE7 /* qrcode.png */; };
 		F18E16F818F3D1F100722FE7 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18E16F718F3D1F100722FE7 /* CollectionViewController.m */; };
 		F18E16FC18F47D3E00722FE7 /* BlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F18E16FB18F47D3E00722FE7 /* BlockActionSheet.m */; };
-		F18E170D18F4AB3000722FE7 /* token.png in Resources */ = {isa = PBXBuildFile; fileRef = F18E170618F4AB3000722FE7 /* token.png */; };
 		F1AD9C6B190FF5500023501C /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD9C6A190FF5500023501C /* default.png */; };
 		F1AD9C6E191052B10023501C /* URLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9C6D191052B10023501C /* URLImageView.m */; };
 		F1AD9C70191053780023501C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AD9C6F191053780023501C /* AssetsLibrary.framework */; };
-		F1E5CDE91815CB06009BE32F /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = F1E5CDE81815CB06009BE32F /* iTunesArtwork@2x */; };
 		F1E7BF8918E9C85400C2DC82 /* TokenCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7BF8818E9C85400C2DC82 /* TokenCode.m */; };
+		FF76A0CD1A094A1E009BE214 /* qrcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76A0CB1A094A1E009BE214 /* qrcode@2x.png */; };
+		FF76A0CE1A094A1E009BE214 /* qrcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76A0CC1A094A1E009BE214 /* qrcode@3x.png */; };
+		FF76A0D11A095A68009BE214 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76A0CF1A095A68009BE214 /* default@2x.png */; };
+		FF76A0D21A095A68009BE214 /* default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76A0D01A095A68009BE214 /* default@3x.png */; };
+		FFA376101A09624400844577 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA3760F1A09624400844577 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +78,6 @@
 		F17A860E17EC12670098E7F3 /* FreeOTP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeOTP-Prefix.pch"; sourceTree = "<group>"; };
 		F17A860F17EC12670098E7F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F17A861017EC12670098E7F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F17A861B17EC12670098E7F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F17A862117EC12670098E7F3 /* FreeOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17A862217EC12670098E7F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F18A62CB1808A64F00345419 /* AddTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTokenViewController.h; sourceTree = "<group>"; };
@@ -86,14 +87,17 @@
 		F18E16F718F3D1F100722FE7 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		F18E16FA18F47D3E00722FE7 /* BlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockActionSheet.h; sourceTree = "<group>"; };
 		F18E16FB18F47D3E00722FE7 /* BlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockActionSheet.m; sourceTree = "<group>"; };
-		F18E170618F4AB3000722FE7 /* token.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token.png; sourceTree = "<group>"; };
 		F1AD9C6A190FF5500023501C /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		F1AD9C6C191052B10023501C /* URLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageView.h; sourceTree = "<group>"; };
 		F1AD9C6D191052B10023501C /* URLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageView.m; sourceTree = "<group>"; };
 		F1AD9C6F191053780023501C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		F1E5CDE81815CB06009BE32F /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iTunesArtwork@2x"; path = "FreeOTP/iTunesArtwork@2x"; sourceTree = "<group>"; };
 		F1E7BF8718E9C85400C2DC82 /* TokenCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenCode.h; sourceTree = "<group>"; };
 		F1E7BF8818E9C85400C2DC82 /* TokenCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenCode.m; sourceTree = "<group>"; };
+		FF76A0CB1A094A1E009BE214 /* qrcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode@2x.png"; sourceTree = "<group>"; };
+		FF76A0CC1A094A1E009BE214 /* qrcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode@3x.png"; sourceTree = "<group>"; };
+		FF76A0CF1A095A68009BE214 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		FF76A0D01A095A68009BE214 /* default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@3x.png"; sourceTree = "<group>"; };
+		FFA3760F1A09624400844577 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,7 @@
 		F17A85F417EC12670098E7F3 = {
 			isa = PBXGroup;
 			children = (
-				F1E5CDE81815CB06009BE32F /* iTunesArtwork@2x */,
+				FF76A0CA1A09433B009BE214 /* FreeOTP-assets */,
 				F17A860617EC12670098E7F3 /* FreeOTP */,
 				F17A85FF17EC12670098E7F3 /* Frameworks */,
 				F17A85FE17EC12670098E7F3 /* Products */,
@@ -155,10 +159,8 @@
 		F17A860617EC12670098E7F3 /* FreeOTP */ = {
 			isa = PBXGroup;
 			children = (
-				F1AD9C6A190FF5500023501C /* default.png */,
-				F18E170618F4AB3000722FE7 /* token.png */,
-				F18E16F118F2603800722FE7 /* qrcode.png */,
 				F1673F1918EC51C900ECD2DB /* Main.storyboard */,
+				FFA3760F1A09624400844577 /* Launch Screen.xib */,
 				F18A62CB1808A64F00345419 /* AddTokenViewController.h */,
 				F18A62CC1808A64F00345419 /* AddTokenViewController.m */,
 				F17A860F17EC12670098E7F3 /* AppDelegate.h */,
@@ -187,7 +189,6 @@
 				F109DBEE1841562600548A3E /* TokenStore.m */,
 				F15300421801BA1D00A0E179 /* base32.h */,
 				F15300401801B9DF00A0E179 /* base32.c */,
-				F17A861B17EC12670098E7F3 /* Images.xcassets */,
 				F17A860717EC12670098E7F3 /* Supporting Files */,
 			);
 			path = FreeOTP;
@@ -201,7 +202,20 @@
 				F17A860C17EC12670098E7F3 /* main.m */,
 				F17A860E17EC12670098E7F3 /* FreeOTP-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF76A0CA1A09433B009BE214 /* FreeOTP-assets */ = {
+			isa = PBXGroup;
+			children = (
+				F1AD9C6A190FF5500023501C /* default.png */,
+				FF76A0CF1A095A68009BE214 /* default@2x.png */,
+				FF76A0D01A095A68009BE214 /* default@3x.png */,
+				F18E16F118F2603800722FE7 /* qrcode.png */,
+				FF76A0CB1A094A1E009BE214 /* qrcode@2x.png */,
+				FF76A0CC1A094A1E009BE214 /* qrcode@3x.png */,
+			);
+			path = "FreeOTP-assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +294,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF76A0D11A095A68009BE214 /* default@2x.png in Resources */,
 				F18E16F218F2603800722FE7 /* qrcode.png in Resources */,
-				F1E5CDE91815CB06009BE32F /* iTunesArtwork@2x in Resources */,
+				FFA376101A09624400844577 /* Launch Screen.xib in Resources */,
+				FF76A0CE1A094A1E009BE214 /* qrcode@3x.png in Resources */,
+				FF76A0D21A095A68009BE214 /* default@3x.png in Resources */,
 				F1AD9C6B190FF5500023501C /* default.png in Resources */,
-				F17A861C17EC12670098E7F3 /* Images.xcassets in Resources */,
-				F18E170D18F4AB3000722FE7 /* token.png in Resources */,
+				FF76A0CD1A094A1E009BE214 /* qrcode@2x.png in Resources */,
 				F1673F1A18EC51C900ECD2DB /* Main.storyboard in Resources */,
 				F17A860B17EC12670098E7F3 /* InfoPlist.strings in Resources */,
 			);
@@ -429,9 +445,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FreeOTP/FreeOTP-Prefix.pch";
-				INFOPLIST_FILE = "FreeOTP/FreeOTP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "FreeOTP/Supporting Files/FreeOTP-Prefix.pch";
+				INFOPLIST_FILE = "FreeOTP/Supporting Files/FreeOTP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -444,9 +460,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FreeOTP/FreeOTP-Prefix.pch";
-				INFOPLIST_FILE = "FreeOTP/FreeOTP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "FreeOTP/Supporting Files/FreeOTP-Prefix.pch";
+				INFOPLIST_FILE = "FreeOTP/Supporting Files/FreeOTP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -463,7 +479,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FreeOTP/FreeOTP-Prefix.pch";
+				GCC_PREFIX_HEADER = "FreeOTP/Supporting Files/FreeOTP-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -485,7 +501,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FreeOTP/FreeOTP-Prefix.pch";
+				GCC_PREFIX_HEADER = "FreeOTP/Supporting Files/FreeOTP-Prefix.pch";
 				INFOPLIST_FILE = "FreeOTPTests/FreeOTPTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

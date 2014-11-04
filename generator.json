@@ -1,0 +1,6 @@
+{
+	"generator-assets": {
+		"svg-enabled": true,
+		"interpolation-type": "nearestNeighbor"
+	}
+}
