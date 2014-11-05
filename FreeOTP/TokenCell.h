@@ -21,10 +21,8 @@
 #import "CircleProgressView.h"
 #import "Token.h"
 #import "TokenCode.h"
-#import "URLImageView.h"
 
 @interface TokenCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet URLImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *code;
 @property (weak, nonatomic) IBOutlet UILabel *issuer;
 @property (weak, nonatomic) IBOutlet UILabel *label;

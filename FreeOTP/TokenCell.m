@@ -56,7 +56,6 @@
     for (NSUInteger i = 0; i < sizeof(tmp) / sizeof(unichar); i++)
         tmp[i] = [self.placeholder.text characterAtIndex:0];
 
-    self.image.url = token.image;
     self.placeholder.text = [NSString stringWithCharacters:tmp length:sizeof(tmp) / sizeof(unichar)];
     self.outer.hidden = ![token.type isEqualToString:@"totp"];
     self.issuer.text = token.issuer;
@@ -89,7 +88,6 @@
             self.placeholder.alpha = 1.0f;
             self.inner.alpha = 0.0f;
             self.outer.alpha = 0.0f;
-            self.image.alpha = 1.0f;
             self.code.alpha = 0.0f;
         } completion:^(BOOL finished) {
             self.outer.progress = 0.0f;
@@ -111,7 +109,6 @@
             self.placeholder.alpha = 0.0f;
             self.inner.alpha = 1.0f;
             self.outer.alpha = 1.0f;
-            self.image.alpha = 0.1f;
             self.code.alpha = 1.0f;
         }];
     }

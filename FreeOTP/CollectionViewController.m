@@ -23,7 +23,6 @@
 #import "AddTokenViewController.h"
 #import "QRCodeScanViewController.h"
 #import "RenameTokenViewController.h"
-#import "TokenImagePickerController.h"
 
 #import "BlockActionSheet.h"
 #import "TokenCell.h"
@@ -144,7 +143,6 @@
         as.title = [NSString stringWithFormat:@"%@\n%@", cell.issuer.text, cell.label.text];
 
     // Add the remaining buttons.
-    [as addButtonWithTitle:NSLocalizedString(@"Change Icon", nil)];
     [as addButtonWithTitle:NSLocalizedString(@"Rename", nil)];
     as.destructiveButtonIndex = [as addButtonWithTitle:NSLocalizedString(@"Delete", nil)];
     as.cancelButtonIndex = [as addButtonWithTitle:NSLocalizedString(@"Cancel", nil)];
@@ -188,17 +186,6 @@
                 }
 
                 break;
-            }
-
-            case 3: { // Change Icon
-                TokenImagePickerController* ipc = [[TokenImagePickerController alloc] initWithTokenID:indexPath.row];
-                if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
-                    [self presentViewController:ipc animated:YES completion:nil];
-                } else {
-                    ipc.popover = self.popover = [[UIPopoverController alloc] initWithContentViewController:ipc];
-                    self.popover.delegate = self;
-                    [self.popover presentPopoverFromRect:cell.frame inView:self.collectionView permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-                }
             }
         }
     };
