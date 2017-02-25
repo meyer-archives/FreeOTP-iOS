@@ -20,6 +20,7 @@
 
 #import "AddTokenViewController.h"
 #import "TokenStore.h"
+#import "FreeOTP_WIP-Swift.h"
 #import <float.h>
 
 #define isChecked(x) ((x) == UITableViewCellAccessoryCheckmark)
@@ -124,8 +125,12 @@
 
     // Make token
     Token* token = [[Token alloc] initWithURL:[urlc URL]];
-    if (token != nil)
+    if (token != nil){
         [[[TokenStore alloc] init] add:token];
+    }
+
+//    TODO
+//    [[TokenStore init] order];
     
     // Return
     if (self.popover == nil)

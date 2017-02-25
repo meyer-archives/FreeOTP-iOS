@@ -31,12 +31,19 @@
     if (self == nil)
         return nil;
 
-    self.layer.cornerRadius = 2.0f;
+    self.layer.cornerRadius = 8.0f;
+    self.layer.borderWidth = 4.0f;
+    self.layer.borderColor = [UIColor grayColor].CGColor;
+    self.layer.masksToBounds = YES;
+    
     return self;
 }
 
+// I don’t think this ever gets called (?)
 - (id)initWithFrame:(CGRect)frame
 {
+    NSLog(@"Init With Frame!!!!!!!!!!!!!!!!!");
+
     self = [super initWithFrame:frame];
     if (self == nil)
         return nil;
@@ -56,12 +63,15 @@
     for (NSUInteger i = 0; i < sizeof(tmp) / sizeof(unichar); i++)
         tmp[i] = [self.placeholder.text characterAtIndex:0];
 
-    self.placeholder.text = [NSString stringWithCharacters:tmp length:sizeof(tmp) / sizeof(unichar)];
     self.outer.hidden = ![token.type isEqualToString:@"totp"];
+
     self.issuer.text = token.issuer;
     self.label.text = token.label;
-    self.code.text = @"";
+    self.code.text = @"Not set";
 
+    self.outer.progress = 1.0f;
+    self.inner.progress = 1.0f;
+    
     return YES;
 }
 
@@ -80,21 +90,16 @@
 
 - (void)setState:(TokenCode *)state
 {
+    NSLog(@"%@ /// %@", state, _state);
+    
     if (_state == state)
         return;
 
     if (state == nil) {
-        [UIView animateWithDuration:0.5f animations:^{
-            self.placeholder.alpha = 1.0f;
-            self.inner.alpha = 0.0f;
-            self.outer.alpha = 0.0f;
-            self.code.alpha = 0.0f;
-        } completion:^(BOOL finished) {
-            self.outer.progress = 0.0f;
-            self.inner.progress = 0.0f;
-            self.code.text = @"";
-        }];
-
+        self.outer.progress = 1.0f;
+        self.inner.progress = 1.0f;
+        self.code.text = @"Expired";
+        
         if (self->timer != nil) {
             [self->timer invalidate];
             self->timer = nil;
@@ -103,14 +108,6 @@
         self->timer = [NSTimer scheduledTimerWithTimeInterval: 0.1 target: self
                                                selector: @selector(timerCallback:)
                                                userInfo: nil repeats: YES];
-
-        // Setup the UI for progress.
-        [UIView animateWithDuration:0.5f animations:^{
-            self.placeholder.alpha = 0.0f;
-            self.inner.alpha = 1.0f;
-            self.outer.alpha = 1.0f;
-            self.code.alpha = 1.0f;
-        }];
     }
 
     _state = state;

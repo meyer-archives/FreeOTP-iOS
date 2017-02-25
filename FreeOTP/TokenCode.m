@@ -27,6 +27,9 @@ static uint64_t currentTimeInMilli()
     if (gettimeofday(&tv, NULL) != 0)
         return 0;
 
+    NSLog(@"SEC: %ld", tv.tv_sec);
+    NSLog(@"USEC: %d", tv.tv_usec);
+    
     return tv.tv_sec * 1000 + tv.tv_usec / 1000;
 }
 
@@ -57,7 +60,10 @@ static uint64_t currentTimeInMilli()
 - (NSString*)currentCode
 {
     uint64_t now = currentTimeInMilli();
-
+    
+    NSLog(@"NOW: %f", CFAbsoluteTimeGetCurrent() * 1000);
+    NSLog(@"ALSO NOW: %llu", now);
+    
     if (now < startTime)
         return nil;
 

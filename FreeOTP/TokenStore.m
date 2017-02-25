@@ -48,6 +48,8 @@ getTokenOrder(NSUserDefaults* def)
     if (def == nil)
         return nil;
 
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
+    
     return self;
 }
 
